@@ -1,3 +1,9 @@
+local CoreGui = game:GetService("CoreGui")
+local gui = CoreGui:FindFirstChild("RobloxGui")
+if gui then
+    gui:Destroy()
+end
+
 local Players = game:GetService("Players")
 local LocalPlayer = Players.LocalPlayer
 local PlayerGui = LocalPlayer:WaitForChild("PlayerGui")
